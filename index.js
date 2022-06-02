@@ -45,9 +45,9 @@ async function run(){
           });
 
     // POST Review
-    app.post("/rating", async (req, res) => {
-        const rating = req.body;
-        const result = await ratingCollection.insertOne(rating);
+    app.post("/reviews", async (req, res) => {
+        const reviews = req.body;
+        const result = await ratingCollection.insertOne(reviews);
         res.json(result);
       });
         
